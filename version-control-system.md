@@ -7,7 +7,7 @@
 ### docker
 * https://docs.gitlab.com/omnibus/docker/
 
-SELinux 사용할 경우. 사용하지 않는 다면 :Z 삭제
+SELinux 를 사용하지 않는다면 context 를 지정하는 옵션인  ***:Z*** 삭제.(Ex- *gitlan:Z*)
 
 ```sh
 sudo docker run --detach \
@@ -44,44 +44,43 @@ Gitea - Git with a cup of tea : A painless self-hosted Git service.
 
 1. 다운로드(https://dl.gitea.io/gitea/)
 
-    Linux
-    
+    **Linux**
+
     ```sh
     wget -O gitea https://dl.gitea.io/gitea/1.3.2/gitea-1.3.2-linux-amd64
     chmod +x gitea
     ```
 
-    Windows
-    
+    **Windows**
+
     ```sh
     mkdir c:\gitea
     wget -O c:\gitea\gitea.exe https://dl.gitea.io/gitea/1.3.2/gitea-1.3.2-windows-4.0-amd64.exe
     ```
 
+2. 서비스 등록
 
-1. 서비스 등록
+    **Linux**
 
-    Linux
-    
-    ```sh
+     ```sh
     sudo wget -O /etc/systemd/system/gitea.service https://github.com/go-gitea/gitea/blob/master/contrib/systemd/gitea.service
     sudo systemctl enable gitea
     sudo systemctl start gitea
-    ```
+     ```
 
-    Windows
+    **Windows**
 
     ```sh
     sc create gitea start= auto binPath= ""C:\gitea\gitea.exe" web --config "C:\gitea\custom\conf\app.ini""
     ```
 
-1. 실행
+3. 실행
 
     ```sh
     gitea web
     ```
 
-1. *http://localhost:3000* 에 Browser 로 연결
+4. *http://localhost:3000* 에 Browser 로 연결
 
 ### install from docker image
 TODO
