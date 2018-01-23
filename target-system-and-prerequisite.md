@@ -2,7 +2,7 @@
 
 <!-- toc --> 
 
-# 목표 시스템
+## 목표 시스템
 
 응용 서비스는 아래의 포트를 사용하도록 구성했고 각각 도메인을 부여하고 가상 호스트로 연결하여 사용합니다.
 
@@ -53,11 +53,11 @@ http {
 
 
 
-## # 사전 필요 지식
+## 사전 필요 지식
 
 
 
-## 가상 호스트(Virtual Host)
+### 가상 호스트(Virtual Host)
 
 하나의 웹 서버로 여러 가지 웹 서비스를 하기 위한 가상 호스트 지식
 
@@ -65,13 +65,11 @@ http {
 
 
 
-## Reverse Proxy
+### Reverse Proxy
 
 웹 서버와 WAS 를 연결하기 위한 reverse proxy.
 
 * https://www.lesstif.com/pages/viewpage.action?pageId=21430345
-
-
 
 
 
