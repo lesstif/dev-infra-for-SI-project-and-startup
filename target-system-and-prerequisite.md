@@ -10,17 +10,19 @@
 
 개발자 PC에서 연결할 수 있도록 hosts 파일에 도메인을 추가하거나 로컬 DNS 서버를 구성해서 사용합니다.
 
-| 서비스                                      | App Port | Domain                                   |
-| ---------------------------------------- | -------- | ---------------------------------------- |
-| [gitlab](https://gitlab.com)             | 8080     | gitlab.example.com                       |
-| [gogs](https://gogs.io)                  | 8180     | gogs.example.com                         |
-| [gitea](https://gitea.io/)               | 8280     | gitea.example.com                        |
-| [redmine(이슈 관리)](http://www.redmine.org) | 8380     | redmine.example.com, issue.example.com   |
-| [JIRA(이슈 관리)](https://www.atlassian.com/software/jira) | 8480     | jira.example.com, issue.example.com      |
-| [Jenkins(지속적인 통합)](https://jenkins.io/)  | 8580     | jenkins.example.com, ci.example.com      |
-| [Bamboo(지속적인 통합)](https://www.atlassian.com/software/bamboo) | 8680     | bamboo.example.com, ci.example.com       |
-| [nexus(저장소 관리)](http://www.sonatype.org/nexus/) | 8780     | nexus.example.com                        |
-| [confluence](https://www.atlassian.com/software/confluence) | 8880     | confluence.example.com, wiki.example.com |
+| 서비스                                      | App Port | Domain                                   | data path                      |
+| ---------------------------------------- | -------- | ---------------------------------------- | ------------------------------ |
+| [gitlab](https://gitlab.com)             | 8080     | gitlab.example.com                       |                                |
+| [gogs](https://gogs.io)                  | 8180     | gogs.example.com                         |                                |
+| [gitea](https://gitea.io/)               | 8280     | gitea.example.com                        |                                |
+| [redmine(이슈 관리)](http://www.redmine.org) | 8380     | redmine.example.com, issue.example.com   |                                |
+| [JIRA(이슈 관리)](https://www.atlassian.com/software/jira) | 8480     | jira.example.com, issue.example.com      |                                |
+| [Jenkins(지속적인 통합)](https://jenkins.io/)  | 8580     | jenkins.example.com, ci.example.com      | /var/proj/jenkins/jenkins_home |
+| [Bamboo(지속적인 통합)](https://www.atlassian.com/software/bamboo) | 8680     | bamboo.example.com, ci.example.com       |                                |
+| [nexus(저장소 관리)](http://www.sonatype.org/nexus/) | 8780     | nexus.example.com                        |                                |
+| [confluence](https://www.atlassian.com/software/confluence) | 8880     | confluence.example.com, wiki.example.com |                                |
+
+data path*(/var/proj*) 는 실제 데이타가 저장되므로 대용량의 별도의 디스크를 추가하고 주기적으로 백업해야 합니다.
 
 ### Virtual Host config
 
