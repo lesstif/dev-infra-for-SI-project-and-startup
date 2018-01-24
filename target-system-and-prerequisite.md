@@ -4,6 +4,8 @@
 
 ## 목표 시스템
 
+### 도메인과 포트
+
 응용 서비스는 아래의 포트를 사용하도록 구성했고 각각 도메인을 부여하고 가상 호스트로 연결하여 사용합니다.
 
 개발자 PC에서 연결할 수 있도록 hosts 파일에 도메인을 추가하거나 로컬 DNS 서버를 구성해서 사용합니다.
@@ -19,6 +21,8 @@
 | [Bamboo(지속적인 통합)](https://www.atlassian.com/software/bamboo) | 8680     | bamboo.example.com, ci.example.com       |
 | [nexus(저장소 관리)](http://www.sonatype.org/nexus/) | 8780     | nexus.example.com                        |
 | [confluence](https://www.atlassian.com/software/confluence) | 8880     | confluence.example.com, wiki.example.com |
+
+### 가상 호스트 추가
 
 설치가 끝난 후에 다음 스크립트를 실행해서 가상 호스트를 추가한 후에 웹 서버와 application server 를 reverse proxy 로 연결해 줍니다.
 
@@ -47,10 +51,11 @@ http {
   # ....
   
   include /etc/nginx/conf.d/*.conf;
+
+  ## 아래 줄 추가
   include /etc/nginx/sites-enabled/*;
 }
 ```
-
 
 
 ## 사전 필요 지식
@@ -73,11 +78,10 @@ http {
 
 
 
-### HTTPS(SSL, TLS)
+### HTTPS (SSL, TLS)
 
 https 를 지원하도록 웹 서버를 설정하는 방법
 
 * https://lesstif.gitbooks.io/web-service-hardening/content/ssl-tls-https.html#%EC%9B%B9-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
-
 
 
