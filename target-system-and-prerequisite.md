@@ -4,7 +4,7 @@
 
 ## 목표 시스템
 
-### 도메인과 포트
+### Domain and Port
 
 응용 서비스는 아래의 포트를 사용하도록 구성했고 각각 도메인을 부여하고 가상 호스트로 연결하여 사용합니다.
 
@@ -22,9 +22,11 @@
 | [nexus(저장소 관리)](http://www.sonatype.org/nexus/) | 8780     | nexus.example.com                        |
 | [confluence](https://www.atlassian.com/software/confluence) | 8880     | confluence.example.com, wiki.example.com |
 
-### 가상 호스트 추가
+### Virtual Host config
 
-설치가 끝난 후에 다음 스크립트를 실행해서 가상 호스트를 추가한 후에 웹 서버와 application server 를 reverse proxy 로 연결해 줍니다.
+설치가 끝난 후에는 웹 서버에 가상 호스트를 추가하고 웹 서버와 application server 를 reverse proxy 로 연결해 줘야 합니다.
+
+반복되는 작업을 단순화하기 위해 script 로 작성해서 github gist 에 올려 놓았습니다.
 
 1. [gist](https://gist.github.com/lesstif/4d162c4c8df756a65286) 다운로드
 
@@ -62,7 +64,7 @@ http {
 
 
 
-### 가상 호스트(Virtual Host)
+### Virtual Host
 
 하나의 웹 서버로 여러 가지 웹 서비스를 하기 위한 가상 호스트 지식
 
@@ -78,9 +80,9 @@ http {
 
 
 
-### HTTPS (SSL, TLS)
+### HTTPS
 
-https 를 지원하도록 웹 서버를 설정하는 방법
+https(SSL, TLS)를 지원하도록 웹 서버를 설정하는 방법
 
 * https://lesstif.gitbooks.io/web-service-hardening/content/ssl-tls-https.html#%EC%9B%B9-%EC%84%9C%EB%B2%84-%EC%84%A4%EC%A0%95%ED%95%98%EA%B8%B0
 

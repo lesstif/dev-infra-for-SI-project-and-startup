@@ -26,7 +26,7 @@ docker run \
 ```
 * *-p 50000:50000"* : JNLP 기반 jenkins agent 를 사용하지 않을 경우 제외 가능.
 
-설치가 완료되었으면 [serve script](target-system-and-prerequisite.md#h5) 를 사용하여 nginx 가상 호스트 추가
+설치가 완료되었으면 [serve script](target-system-and-prerequisite.md#virtual-host-config) 를 사용하여 nginx 가상 호스트 추가
 
 ```sh
 sudo serve-tomcat.sh  jenkins.example.com 8580
