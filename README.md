@@ -2,7 +2,7 @@
 
 SI(System Integration) 프로젝트등 On-Premise 환경에서 개발 인프라 구성하기.
 
-소스는 [**github**](https://github.com/lesstif/dev-infra-for-SI-project-and-startup)에 있으며 온라인 EBook은 **[gitbook](https://lesstif.gitbooks.io/dev-infra-for-si-project-and-startup/content/)** 에서 읽으실 수 있으며 다음 포맷으로 다운로드 가능합니다.
+소스는 [**github**](https://github.com/lesstif/dev-infra-for-SI-project-and-startup)에 있으며 온라인 EBook은 [gitbook](https://lesstif.gitbooks.io/on-premise-docker/content/) 또는 **[gitbook v2](https://lesstif.gitbooks.io/dev-infra-for-si-project-and-startup/content/)** 에서 읽으실 수 있으며 다음 포맷으로 다운로드 가능합니다.
 
 - [PDF](https://www.gitbook.com/download/pdf/book/lesstif/dev-infra-for-si-project-and-startup)
 - [EPub](https://www.gitbook.com/download/epub/book/lesstif/dev-infra-for-si-project-and-startup)
