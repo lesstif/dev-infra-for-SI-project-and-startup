@@ -13,3 +13,20 @@ docker 는 Windows, OS X도 지원하지만 저자는 리눅스를 사용하는 
 
 리눅스 배포판은 우분투 서버(Ubuntu Server)나 레드햇 엔터프라이즈 리눅스(RHEL;Red Hat Enterprise Linux)/CentOS 중 익숙한 것을 사용하면 되며 docker 가 잘 지원되는 최신 OS(CentOS7, Ubuntu 16)를 사용해야 합니다.
 
+## Docker
+
+### Volume
+
+데이타 영속성을 위한 docker volume directory 생성 및 사용
+
+* https://docs.docker.com/storage/volumes/
+
+## PostgreSQL
+
+데이타 저장을 위한 DBMS.
+MySQL 이 익숙하지만 라이센스가 자유롭고 성능이 뛰어난 postgreSQL 권장 
+
+## Ref
+* https://medium.com/@gurayy/setting-up-redmine-with-docker-be110387ba1c
+* [docker volume의 사용방법과 차이점](https://darkrasid.github.io/docker/container/volume/2017/05/10/docker-volumes.html)
+

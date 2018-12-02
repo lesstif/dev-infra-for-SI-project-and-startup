@@ -3,6 +3,7 @@
 * [Introduction](README.md)
 * [목표 시스템 및 사전 필요 지식](target-system-and-prerequisite.md)
 * [기술 스택](technical-stack.md)
+* [PostgreSQL](postgresql.md)
 * [형상 관리 시스템](version-control-system.md)
 * [이슈 및 프로젝트 관리 시스템](issue-and-project-management-system.md)
 * [저장소 관리 시스템](repository-manager-system.md)
